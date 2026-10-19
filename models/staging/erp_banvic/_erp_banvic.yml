@@ -13,7 +13,22 @@ sources:
               - not_null
       - name: clientes
         description: Tabela fonte de clientes com informações pessoais de cada cliente da Banvic.
+        columns:
+          - name: COD_CLIENTE
+            data_tests:
+              - unique
+              - not_null
       - name: agencias
         description: Tabela fonte com o cadastro de agências da Banvic.
+        columns:
+          - name: COD_AGENCIA
+            data_tests:
+              - unique
+              - not_null
       - name: colaboradores
         description: Tabela fonte com o cadastro e informações de colaboradores da Banvic.
+        columns:
+          - name: COD_COLABORADOR
+            data_tests:
+              - unique
+              - not_null
