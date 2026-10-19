@@ -63,6 +63,17 @@ seeds:
         SALDO_DISPONIVEL: string
         DATA_ULTIMO_LANCAMENTO: string
 
+  - name: localidades
+    config:
+      column_types:
+        COD_LOCALIDADE: string
+      quote_columns: false
+    columns:
+      - name: COD_LOCALIDADE
+        data_tests:
+          - unique
+          - not_null
+
   - name: propostas_credito
     config:
       quote_columns: false
@@ -89,4 +100,3 @@ seeds:
         DATA_TRANSACAO: string
         NOME_TRANSACAO: string
         VALOR_TRANSACAO: string
-

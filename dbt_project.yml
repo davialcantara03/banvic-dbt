@@ -39,3 +39,5 @@ seeds:
   my_new_project:
     +catalog: dev
     +enabled: true
+    banvic:
+      +schema: erp_banvic
