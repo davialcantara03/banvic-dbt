@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_erp__localidades
+    description: "Mapeamento e limpeza inicial dos dados de localidades do ERP Banvic."
+    columns:
+      - name: pk_localidade
+        description: "Chave primária de localidade"
+        data_tests:
+          - unique
+          - not_null

@@ -1,0 +1,9 @@
+models:
+  - name: stg_erp__colaboradores
+    description: "Mapeamento e limpeza inicial dos dados de colaboradores do ERP Banvic."
+    columns:
+      - name: pk_colaborador
+        description: "Chave primária do colaborador (cast de cod_colaborador para inteiro)."
+        data_tests:
+          - unique
+          - not_null
