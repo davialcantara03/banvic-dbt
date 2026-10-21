@@ -1,0 +1,9 @@
+models:
+  - name: stg_erp__contas
+    description: "Mapeamento e limpeza inicial dos dados de contas do ERP Banvic."
+    columns:
+      - name: pk_conta
+        description: "Chave primária da conta (cast de num_conta para inteiro)."
+        data_tests:
+          - unique
+          - not_null
